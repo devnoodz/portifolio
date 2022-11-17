@@ -35,3 +35,15 @@ function move() {
 }
 
 window.addEventListener('scroll', move)
+
+function mudaCorDeFundo () {
+  function random (numero) {
+    return Math.floor(Math.random()*(numero+1));
+  }
+  const rndCol = `rgb(${random(255)},${random(255)}, ${random(255)})`;
+  document.getElementById('name').style.color = rndCol
+  console.log(rndCol);
+}
+window.addEventListener("load",function(){
+  setInterval(function (){mudaCorDeFundo()},500)
+})
