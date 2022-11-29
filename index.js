@@ -42,7 +42,7 @@ function mudaCorDeFundo () {
   }
   const rndCol = `rgb(${random(255)},${random(255)}, ${random(255)})`;
   document.getElementById('name').style.color = rndCol
-  console.log(rndCol);
+  //console.log(rndCol);
 }
 window.addEventListener("load",function(){
   setInterval(function (){mudaCorDeFundo()},500)
